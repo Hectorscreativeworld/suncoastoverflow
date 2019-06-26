@@ -29,6 +29,7 @@ namespace suncoastoverflow
       if (!optionsBuilder.IsConfigured)
       {
         var envConn = Environment.GetEnvironmentVariable("DATABASE_URL");
+
         var conn = "server=localhost;database=SuncoastOverflow";
         if (envConn != null)
         {
@@ -44,6 +45,10 @@ namespace suncoastoverflow
     {
       modelBuilder.HasAnnotation("ProductVersion", "2.2.0-rtm-35687");
     }
+
+
+    public DbSet<Question> QuestionsTable { get; set; }
+    public DbSet<Answer> AnswersTable { get; set; }
 
   }
 }
