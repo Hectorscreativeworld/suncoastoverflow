@@ -13,6 +13,13 @@ namespace suncoastoverflow.Controllers
     [Route("api/[controller]")]
     public class QuestionController : Controller
     {
+      [HttpPost]
+      public ActionResult<Question> PostSampleData([FromBody] Question data)
+      {
+        var db = new DatabaseContext();
+        db.QuestionsTable.Add(data);
+        return data;
+      }
       [HttpGet]
       public ActionResult<List<Question>> GetUnansweredQuestions()
       {
