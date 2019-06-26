@@ -15,6 +15,7 @@ namespace suncoastoverflow.Controllers
     {
       var db = new DatabaseContext();
       db.AnswersTable.Add(stuff);
+      db.SaveChanges();
       return stuff;
     }
 
