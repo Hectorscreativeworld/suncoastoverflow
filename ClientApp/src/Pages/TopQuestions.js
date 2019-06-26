@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import '../components/TopQuestions.css'
-
+// wtf
 class TopQuestions extends Component {
   render() {
     return (
