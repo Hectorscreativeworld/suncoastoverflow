@@ -1,0 +1,12 @@
+.Vav-Container {
+  justify-content: space-between;
+  padding-left: 2rem;
+  margin-top: 1rem;
+  color: gray;
+}
+
+.Question-Title-Container {
+  justify-content: space-between;
+  margin: 1rem;
+  color: blue;
+}

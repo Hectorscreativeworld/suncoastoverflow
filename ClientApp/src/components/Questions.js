@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './Questions.css'
 
 class Questions extends Component {
   render() {
@@ -16,12 +17,12 @@ class Questions extends Component {
           'How can I connect the ends of edges in order to close the hole between them?',
         votes: 6,
         answers: 2,
-        view: 55,
+        views: 55,
         tags: ['python', 'HTML', 'F#']
       }
     ]
     const allQuestions = questions.map(question => (
-      <div className="d-flex  aQuestion-Container">
+      <div className="d-flex justify-content-around  Question-Container">
         <div className="d-flex Vav-Container">
           <div className="Vote-Container">{question.votes}</div>
           <div className="Answer-Container">{question.answers}</div>
