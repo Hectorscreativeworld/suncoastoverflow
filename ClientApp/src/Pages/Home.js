@@ -6,12 +6,14 @@ import Axios from 'axios'
 
 class Home extends Component {
   state = {
-    questionTitle: ''
+    elephant: []
   }
   componentDidMount() {
     Axios.get('/api/question/unanswered').then(resp => {
+      console.log(resp.data)
       this.setState({
-        questionTitle: resp.data.questiontitle
+        elephant: resp.data
+
       })
     })
   }
@@ -21,6 +23,11 @@ class Home extends Component {
       <div>
         <TopQuestions />
         <Questions />
+        <ul>
+          {this.state.elephant.map(m => {
+            return <li>{m.questionTitle}</li>
+          })}
+        </ul>
       </div>
     )
   }
