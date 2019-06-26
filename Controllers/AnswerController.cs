@@ -10,14 +10,14 @@ namespace suncoastoverflow.Controllers
   [Route("api/[controller]")]
   public class AnswerController : Controller
   {
-    [HttpPost]
+    [HttpPost("new")]
     public ActionResult<Answer> PostSampleAnswers([FromBody] Answer stuff)
     {
       var db = new DatabaseContext();
       db.AnswersTable.Add(stuff);
       return stuff;
     }
-    
+
 
   }
 }
