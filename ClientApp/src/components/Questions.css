@@ -1,0 +1,59 @@
+.Vav-Container {
+  justify-content: space-between;
+  padding-left: 2rem;
+  margin-top: 1rem;
+  color: gray;
+}
+
+.Question-Title-Container {
+  /* justify-content: space-between; */
+  margin: 1rem;
+  color: blue;
+}
+
+.Question-Container {
+  margin-top: 2rem;
+  border-bottom: 3px solid grey;
+}
+
+.Vote-Container {
+  margin: 20px;
+}
+
+.Answer-Container {
+  margin: 20px;
+}
+
+.Views-Container {
+  margin: 20px;
+}
+
+.SpanVotes {
+  float: left;
+  clear: left;
+}
+
+button {
+  float: left;
+  clear: left;
+}
+
+/* .SpanAnswer {
+  float: left;
+  clear: left;
+}
+
+button {
+  float: left;
+  clear: left;
+} */
+
+/* .SpanViews {
+  float: left;
+  clear: left;
+}
+
+button {
+  float: left;
+  clear: left;
+} */
