@@ -4,7 +4,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using suncoastoverflow.Models;
 
-
 namespace suncoastoverflow
 {
   public partial class DatabaseContext : DbContext
