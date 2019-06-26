@@ -7,7 +7,7 @@ export class NavMenu extends Component {
   render() {
     return (
       <nav className="navbar navbar-light bg-light justify-content-between">
-        <a className="navbar-brand">Navbar</a>
+        <a className="navbar-brand">Suncoast Overflow</a>
         <form className="form-inline">
           <input
             className="form-control mr-sm-2"

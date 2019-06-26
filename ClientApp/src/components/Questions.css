@@ -6,7 +6,23 @@
 }
 
 .Question-Title-Container {
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin: 1rem;
   color: blue;
+}
+
+.Question-Container {
+  margin-top: 2rem;
+}
+
+.Vote-Container {
+  margin: 20px;
+}
+
+.Answer-Container {
+  margin: 20px;
+}
+
+.Views-Container {
+  margin: 20px;
 }
