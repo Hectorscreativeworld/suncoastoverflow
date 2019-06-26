@@ -13,6 +13,7 @@
 
 .Question-Container {
   margin-top: 2rem;
+  border-bottom: 3px solid grey;
 }
 
 .Vote-Container {
