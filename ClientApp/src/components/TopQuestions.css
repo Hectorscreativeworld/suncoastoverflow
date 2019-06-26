@@ -1,4 +1,11 @@
 .Top-Question-ask-Btn {
   display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
 
+}
+
+.btn-group {
+  display: flex;
+  margin-top: 1rem;
 }

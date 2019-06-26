@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
-import './TopQuestions.css'
+import '../TopQuestions.css'
 
 class TopQuestions extends Component {
   render() {
     return (
       <div>
         <section className="Top-Question-ask-Btn">
-          <h1 className="TopQuestionText">Top Questions</h1>
+          <h3 className="TopQuestionText">Top Questions</h3>
           <button
             type="button"
-            className="btn btn-primary"
+            className="ask-btn btn btn-primary"
             data-toggle="button"
             aria-pressed="false"
             autocomplete="off"
@@ -17,15 +17,22 @@ class TopQuestions extends Component {
             Ask Question
           </button>
         </section>
+
         <div class="btn-group" role="group" aria-label="Basic example">
           <button type="button" class="btn btn-secondary">
-            Left
+            interesting
           </button>
           <button type="button" class="btn btn-secondary">
-            Middle
+            Featured
           </button>
           <button type="button" class="btn btn-secondary">
-            Right
+            Hot
+          </button>
+          <button type="button" class="btn btn-secondary">
+            Week
+          </button>
+          <button type="button" class="btn btn-secondary">
+            Month
           </button>
         </div>
       </div>
