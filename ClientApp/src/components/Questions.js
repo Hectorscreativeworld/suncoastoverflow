@@ -26,11 +26,11 @@ class Questions extends Component {
         <div className="d-flex Vav-Container">
           <div className="Vote-Container">
             {question.votes}
-            <span className="SpanVotes">votes</span>
+            <div className="SpanVotes">votes</div>
           </div>
           <div className="Answer-Container">
             {question.answers}
-            <div className="SpanAnswer">answer</div>
+            <div className="SpanAnswer">answers</div>
           </div>
 
           <div className="Views-Container">

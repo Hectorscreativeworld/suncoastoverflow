@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import Questions from '../components/Questions.js'
-import TopQuestions from './TopQuestions'
+import TopQuestions from '../components/TopQuestions.js'
 import Axios from 'axios'
 
 class Home extends Component {

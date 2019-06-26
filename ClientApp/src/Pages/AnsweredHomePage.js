@@ -4,6 +4,7 @@ class AnsweredHomePage extends Component {
   render() {
     return (
       <div>
+        </Conversation >
         <span className="d-block p-2 bg-primary text-white">d-block</span>
 
         <div class="form-group">
