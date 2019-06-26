@@ -29,7 +29,7 @@ namespace suncoastoverflow
       if (!optionsBuilder.IsConfigured)
       {
         var envConn = Environment.GetEnvironmentVariable("DATABASE_URL");
-#warning Be sure to update to your correct connection string to the point to the correct database
+
         var conn = "server=localhost;database=SuncoastOverflow";
         if (envConn != null)
         {
@@ -46,6 +46,7 @@ namespace suncoastoverflow
       modelBuilder.HasAnnotation("ProductVersion", "2.2.0-rtm-35687");
     }
 
-    public DbSet<Thing> Things { get; set; }
+    public DbSet<Question> QuestionsTable { get; set; }
+    public DbSet<Answer> AnswersTable { get; set; }
   }
 }
