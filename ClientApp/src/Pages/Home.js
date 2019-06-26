@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Questions from '../Questions'
+import Questions from '../components/Questions'
 import TopQuestions from './TopQuestions'
 
 class Home extends Component {
