@@ -4,7 +4,7 @@ class AnsweredHomePage extends Component {
   render() {
     return (
       <div>
-        <span class="d-block p-2 bg-primary text-white">d-block</span>
+        <span className="d-block p-2 bg-primary text-white">d-block</span>
       </div>
     )
   }
