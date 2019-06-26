@@ -6,6 +6,7 @@ class CreateQuestion extends Component {
       <div>
         <header>Create a question</header>
         <form>
+          <input placeholder="Title goes here." />
           <textarea>
             <button>Submit</button>
           </textarea>
