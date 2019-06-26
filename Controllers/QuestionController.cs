@@ -10,9 +10,6 @@ namespace suncoastoverflow.Controllers
   [Route("api/[controller]")]
   public class QuestionController : Controller
   {
-    [Route("api/[controller]")]
-    public class QuestionController : Controller
-    {
       [HttpPost]
       public ActionResult<Question> PostSampleData([FromBody] Question data)
       {
