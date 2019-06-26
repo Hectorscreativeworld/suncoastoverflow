@@ -8,7 +8,7 @@ using suncoastoverflow.Models;
 namespace suncoastoverflow.Controllers
 {
   [Route("api/[controller]")]
-  public class SampleDataController : Controller
+  public class QuestionController : Controller
   {
     [Route("api/[controller]")]
     public class QuestionController : Controller
