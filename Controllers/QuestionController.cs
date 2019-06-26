@@ -15,9 +15,17 @@ namespace suncoastoverflow.Controllers
     {
       var db = new DatabaseContext();
       db.QuestionsTable.Add(data);
+      db.SaveChanges();
       return data;
     }
-    [HttpGet]
+    [HttpGet("all")]
+    public ActionResult<List<Question>> GetAllQuestions()
+    {
+      var db = new DatabaseContext();
+      var everything = db.QuestionsTable;
+      return everything.ToList();
+    }
+    [HttpGet("unanswered")]
     public ActionResult<List<Question>> GetUnansweredQuestions()
     {
       var db = new DatabaseContext();
