@@ -24,11 +24,21 @@ class Questions extends Component {
     const allQuestions = questions.map(question => (
       <div className="d-flex   Question-Container">
         <div className="d-flex Vav-Container">
-          <div className="Vote-Container">{question.votes}</div>
-          <div className="Answer-Container">{question.answers}</div>
-          <div className="Views-Container">{question.views}</div>
+          <div className="Vote-Container">
+            {question.votes}
+            <span className="SpanVotes">votes</span>
+          </div>
+          <div className="Answer-Container">
+            {question.answers}
+            <div className="SpanAnswer">answer</div>
+          </div>
+
+          <div className="Views-Container">
+            {question.views}
+            <div className="SpanViews">views</div>
+          </div>
         </div>
-        <hr />
+
         <div className="Question-Title-Container">
           <div className="Question-Title">{question.title}</div>
         </div>
