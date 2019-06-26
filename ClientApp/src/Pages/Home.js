@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Questions from '../Questions'
-import TopQuestions from './TopQuestions'
+import Questions from '../components/Questions'
+import TopQuestions from '../components/TopQuestions'
 
 class Home extends Component {
   render() {
