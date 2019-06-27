@@ -43,7 +43,7 @@ class Questions extends Component {
             <span className="SpanVotes">votes </span>
           </div>
           <div className="Answer-Container">
-            {question.answered === true ? <div>Yes</div> : <div>No</div>}
+            {question.answered === true ? <p>Yes</p> : <p>No</p>}
             <div className="SpanAnswer">Answered?</div>
           </div>
 

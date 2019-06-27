@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router'
 import { Layout } from './components/Layout'
-import AnsweredHomePage from './Pages/AnsweredHomePage.js'
-import AskAQuestionHomePage from './Pages/AskAQuestionHomePage.js'
-import Home from './Pages/Home'
+import AnsweredHomePage from './pages/AnsweredHomePage.js'
+import AskAQuestionHomePage from './pages/AskAQuestionHomePage.js'
+import Home from './pages/Home'
 
 export default class App extends Component {
   static displayName = App.name
