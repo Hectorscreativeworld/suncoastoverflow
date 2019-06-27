@@ -1,0 +1,22 @@
+.wiseMan {
+  margin-top: 0;
+  padding: 0;
+
+  flex-grow: auto;
+
+}
+
+.mainContainer {
+  display: flex;
+  border-bottom: 3px solid grey;
+}
+
+.form-group {
+  flex-grow: 1;
+  width: 1rem;
+  margin-top: 3rem;
+}
+
+.submitBtn {
+  margin-top: 1rem;
+}
