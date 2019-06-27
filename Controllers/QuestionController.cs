@@ -22,6 +22,9 @@ namespace suncoastoverflow.Controllers
     public ActionResult<List<Question>> GetAllQuestions()
     {
       var db = new DatabaseContext();
+      // need some kind of includes statement below this comment
+      // to pull in the numb er of answers it has but I'm lost on 
+      // how to approach the logic to do that - dante
       var everything = db.QuestionsTable;
       return everything.ToList();
     }
