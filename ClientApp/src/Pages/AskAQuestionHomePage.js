@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from './node_modules/react'
 import oracal from '../Images/oracal.gif'
 import './AskAQuestionCss_Page.css'
 import RandomTechNews from '../components/RandomTechNews'

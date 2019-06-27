@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from './node_modules/react'
 
 import Questions from '../components/Questions.js'
 import TopQuestions from '../components/TopQuestions'
