@@ -1,21 +1,9 @@
 import React, { Component } from 'react'
 
 import Questions from '../components/Questions.js'
-import TopQuestions from '../components/TopQuestions.js'
-import Axios from 'axios'
+import TopQuestions from '../components/TopQuestions'
 
 class Home extends Component {
-  state = {
-    questionTitle: ''
-  }
-  componentDidMount() {
-    Axios.get('/api/question/unanswered').then(resp => {
-      this.setState({
-        questionTitle: resp.data.questiontitle
-      })
-    })
-  }
-
   render() {
     return (
       <div>

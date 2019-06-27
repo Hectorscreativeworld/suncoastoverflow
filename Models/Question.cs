@@ -1,5 +1,4 @@
 using System;
-
 namespace suncoastoverflow.Models
 {
   public class Question
@@ -9,5 +8,6 @@ namespace suncoastoverflow.Models
     public string QuestionBody { get; set; }
     public int QuestionVote { get; set; }
     public bool Answered { get; set; }
+    
   }
 }
