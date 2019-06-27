@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import './Questions.css'
 import Axios from 'axios'
-import {Link} from 'react-router-dom'
-
+import { Link } from 'react-router-dom'
 
 class Questions extends Component {
   state = {
@@ -35,7 +34,7 @@ class Questions extends Component {
     //     tags: ['python', 'HTML', 'F#']
     //   }
     // ]
-    
+
     const allQuestions = this.state.elephant.map(question => (
       <div className="d-flex   Question-Container">
         <div className="d-flex Vav-Container">
@@ -44,7 +43,8 @@ class Questions extends Component {
             <span className="SpanVotes">votes </span>
           </div>
           <div className="Answer-Container">
-            {/* {question.answers} */}5<div className="SpanAnswer">answer</div>
+            {question.answered === true ? <div>Yes</div> : <div>No</div>}
+            <div className="SpanAnswer">Answered?</div>
           </div>
 
           <div className="Views-Container">
