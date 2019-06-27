@@ -35,6 +35,7 @@ class Questions extends Component {
     //     tags: ['python', 'HTML', 'F#']
     //   }
     // ]
+    
     const allQuestions = this.state.elephant.map(question => (
       <div className="d-flex   Question-Container">
         <div className="d-flex Vav-Container">
