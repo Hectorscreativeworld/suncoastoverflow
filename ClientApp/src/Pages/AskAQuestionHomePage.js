@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import oracal from '../Images/oracal.gif'
 import './AskAQuestionCss_Page.css'
+import RandomTechNews from '../components/RandomTechNews'
 
 class AskAQuestionHomePage extends Component {
   render() {
@@ -14,10 +15,7 @@ class AskAQuestionHomePage extends Component {
             submit
           </button>
         </div>
-
-        {/* <div className="wiseMan">
-          <img src={oracal} alt="oracal" />
-        </div> */}
+        <RandomTechNews />
       </div>
     )
   }
