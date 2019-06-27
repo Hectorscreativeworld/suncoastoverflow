@@ -1,10 +1,25 @@
 import React, { Component } from 'react'
+import axios from 'axios'
 
 import { Link } from 'react-router-dom'
 import './NavMenu.css'
 
 export class NavMenu extends Component {
+  state = {
+    questions: [],
+    searchTerm: ''
+  }
+
   render() {
+    const getSearchResults = e => {
+      e.preventDefault()
+      axios.get('/api/search/questions?searchTerm=y').then(resp => {
+        this.setState({
+          questions: resp.data
+        })
+        console.log(this.state.questions)
+      })
+    }
     return (
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a className="navbar-brand" href="#">
@@ -65,12 +80,17 @@ export class NavMenu extends Component {
               </a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
+          <form class="form-inline my-2 my-lg-0" onSubmit={getSearchResults}>
             <input
               class="form-control mr-sm-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
+              onChange={e =>
+                this.setState({
+                  searchTerm: e.target.value
+                })
+              }
             />
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
               Search
