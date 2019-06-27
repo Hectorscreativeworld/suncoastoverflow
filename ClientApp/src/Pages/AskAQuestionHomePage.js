@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import wiseMan from '../Images/wiseMan.png'
+import oracal from '../Images/oracal.gif'
 import './AskAQuestionCss_Page.css'
 
 class AskAQuestionHomePage extends Component {
   render() {
-    console.log(wiseMan)
+    console.log(oracal)
     return (
       <div className="mainContainer">
         <div className="form-group">
@@ -15,9 +15,9 @@ class AskAQuestionHomePage extends Component {
           </button>
         </div>
 
-        <div className="wiseMan">
-          <img src={wiseMan} alt="wise man" />
-        </div>
+        {/* <div className="wiseMan">
+          <img src={oracal} alt="oracal" />
+        </div> */}
       </div>
     )
   }
