@@ -1,24 +1,24 @@
 body {
-  background: url(/oracal.gif);
-
+  background: url(../Images/oracal.gif);
+  background-repeat: no-repeat;
+  background-repeat: repeat-x;
 }
-
 
 .wiseMan {
   margin-top: 0;
   padding: 0;
 
   flex-grow: auto;
-
 }
 
 .mainContainer {
   display: flex;
-  border-bottom: 3px solid grey;
+  color: white;
+  font-size: 3rem;
 }
 
 .form-group {
-  flex-grow: 1;
+  flex-grow: 0.4;
   width: 1rem;
   margin-top: 3rem;
 }
