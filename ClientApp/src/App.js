@@ -14,10 +14,10 @@ export default class App extends Component {
     return (
       <Layout>
         <Route exact path="/" component={Home} />
-        <Route exact path="AnsweredHomePage" component={AnsweredHomePage} />
+        <Route exact path="/AnsweredHomePage" component={AnsweredHomePage} />
         <Route
           exact
-          path="AskAQuestionHomePage"
+          path="/AskAQuestionHomePage"
           component={AskAQuestionHomePage}
         />
       </Layout>
