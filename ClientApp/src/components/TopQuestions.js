@@ -1,4 +1,8 @@
 import React, { Component } from 'react'
+<<<<<<< HEAD:ClientApp/src/components/TopQuestions.js
+import './TopQuestions.css'
+=======
+>>>>>>> 57cfa69ccbfb510d87c87a1dc7cea1638180be97:ClientApp/src/Pages/TopQuestions.js
 
 import '../components/TopQuestions.css'
 // wtf
