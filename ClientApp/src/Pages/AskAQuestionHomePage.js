@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import oracal from '../Images/oracal.gif'
 import './AskAQuestionCss_Page.css'
-// import RandomTechNews from '../components/RandomTechNews'
+import RandomTechNews from '../components/RandomTechNews'
 
 class AskAQuestionHomePage extends Component {
   render() {
@@ -15,7 +15,7 @@ class AskAQuestionHomePage extends Component {
               submit
             </button>
           </div>
-          {/* <RandomTechNews /> */}
+          <RandomTechNews /> */
         </div>
       </section>
     )

@@ -18,7 +18,6 @@ namespace suncoastoverflow.Controllers
       db.SaveChanges();
       return data;
     }
-
     [HttpGet("all")]
     public ActionResult<List<Question>> GetAllQuestions()
     {
@@ -36,8 +35,6 @@ namespace suncoastoverflow.Controllers
       var all = db.QuestionsTable.Where(w => w.Answered == false);
       return all.ToList();
     }
-
-
 
   }
 }
