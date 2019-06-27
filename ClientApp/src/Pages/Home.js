@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import Questions from '../components/Questions.js'
-import TopQuestions from './TopQuestions'
+import TopQuestions from '../components/TopQuestions'
 import Axios from 'axios'
 
 class Home extends Component {
@@ -13,7 +13,6 @@ class Home extends Component {
       console.log(resp.data)
       this.setState({
         elephant: resp.data
-
       })
     })
   }

@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router'
 import { Layout } from './components/Layout'
-
-import AnsweredHomePage from './Pages/AnsweredHomePage'
-import AskAQuestionHomePage from './Pages/AskAQuestionHomePage'
-
+import AnsweredHomePage from './Pages/AnsweredHomePage.js'
+import AskAQuestionHomePage from './Pages/AskAQuestionHomePage.js'
 import Home from './Pages/Home'
 
 export default class App extends Component {
