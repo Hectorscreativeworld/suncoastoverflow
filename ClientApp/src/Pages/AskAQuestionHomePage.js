@@ -5,7 +5,6 @@ import './AskAQuestionCss_Page.css'
 
 class AskAQuestionHomePage extends Component {
   render() {
-    console.log(oracal)
     return (
       <section className="topContainer">
         <div className="mainContainer">
