@@ -18,6 +18,7 @@ namespace suncoastoverflow.Controllers
       db.SaveChanges();
       return data;
     }
+
     [HttpGet("all")]
     public ActionResult<List<Question>> GetAllQuestions()
     {
