@@ -8,8 +8,8 @@ class Conversation extends Component {
           <div className="media-left">
             <img
               src="img_avatar1.png"
-              class="media-object"
-              style="width:60px"
+              className="media-object"
+              // style="width:60px"
             />
           </div>
           <div className="media-body">
@@ -31,7 +31,7 @@ class Conversation extends Component {
             <img
               src="img_avatar1.png"
               class="media-object"
-              style="width:60px"
+              // style="width:60px"
             />
           </div>
         </div>

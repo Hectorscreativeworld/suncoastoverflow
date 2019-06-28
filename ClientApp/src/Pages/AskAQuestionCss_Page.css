@@ -21,7 +21,7 @@
 .mainContainer {
   display: flex;
   color: white;
-  font-size: 3rem;
+  /* font-size: 3rem; */
 }
 
 .form-group {

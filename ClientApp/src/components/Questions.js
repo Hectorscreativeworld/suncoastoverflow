@@ -17,30 +17,12 @@ class Questions extends Component {
     })
   }
   render() {
-    // const questions = [
-    //   {
-    //     title: 'test data',
-    //     votes: 0,
-    //     answers: 0,
-    //     views: 1,
-    //     tags: ['python', 'Flask', 'c#']
-    //   },
-    //   {
-    //     title:
-    //       'How can I connect the ends of edges in order to close the hole between them?',
-    //     votes: 6,
-    //     answers: 2,
-    //     views: 55,
-    //     tags: ['python', 'HTML', 'F#']
-    //   }
-    // ]
-
     const allQuestions = this.state.elephant.map(question => (
       <div className="d-flex   Question-Container">
         <div className="d-flex Vav-Container">
           <div className="Vote-Container">
             {question.questionVote}
-            <span className="SpanVotes">votes </span>
+            <div className="SpanVotes">votes </div>
           </div>
           <div className="Answer-Container">
             {question.answered === true ? <p>Yes</p> : <p>No</p>}
@@ -54,7 +36,9 @@ class Questions extends Component {
 
         <div className="Question-Title-Container">
           <div className="Question-Title">
-            <Link to="/AnsweredHomePage">{question.questionTitle}</Link>
+            <Link key={this.question.Id} to="../Pages/AnsweredHomePage">
+              {question.questionTitle}
+            </Link>
           </div>
         </div>
       </div>

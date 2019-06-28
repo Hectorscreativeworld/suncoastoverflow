@@ -58,3 +58,8 @@ button {
   float: left;
   clear: left;
 } */
+
+p {
+  padding: 0%;
+  margin: 0%;
+}

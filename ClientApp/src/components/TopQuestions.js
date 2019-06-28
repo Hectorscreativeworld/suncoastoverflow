@@ -10,7 +10,6 @@ class TopQuestions extends Component {
         <section className="Top-Question-ask-Btn">
           <h3 className="TopQuestionText">Top Questions</h3>
           <Link to="/AskAQuestionHomePage">
-            {' '}
             <button
               type="button"
               className="ask-btn btn btn-primary"

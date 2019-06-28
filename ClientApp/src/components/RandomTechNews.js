@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import '../components/RandomTechNews.css'
 
 function RandomTechNews() {
   const [RandomTechNews, setRandomTechNews] = useState([])
