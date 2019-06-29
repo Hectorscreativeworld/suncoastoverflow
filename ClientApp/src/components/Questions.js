@@ -5,20 +5,20 @@ import { Link } from 'react-router-dom'
 
 class Questions extends Component {
   state = {
-    elephant: []
+    questions: []
   }
   componentDidMount() {
     Axios.get('/api/question/all').then(resp => {
       console.log(resp.data)
       this.setState({
-        elephant: resp.data,
+        questions: resp.data,
         title: resp.data.questionTitle
       })
     })
   }
   render() {
-    const allQuestions = this.state.elephant.map(question => (
-      <div className="d-flex   Question-Container">
+    const allQuestions = this.state.questions.map(question => (
+      <div className="d-flex   Question-Container" key={question.id}>
         <div className="d-flex Vav-Container">
           <div className="Vote-Container">
             {question.questionVote}
@@ -36,7 +36,10 @@ class Questions extends Component {
 
         <div className="Question-Title-Container">
           <div className="Question-Title">
-            <Link key={this.question.Id} to="../Pages/AnsweredHomePage">
+            <Link
+              key={question.id}
+              to={`../Pages/AnsweredHomePage/${question.id}`}
+            >
               {question.questionTitle}
             </Link>
           </div>

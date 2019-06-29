@@ -12,7 +12,11 @@ export default class App extends Component {
     return (
       <Layout>
         <Route exact path="/" component={Home} />
-        <Route exact path="/AnsweredHomePage" component={AnsweredHomePage} />
+        <Route
+          exact
+          path="/Pages/AnsweredHomePage/:id"
+          component={AnsweredHomePage}
+        />
         <Route
           exact
           path="/AskAQuestionHomePage"

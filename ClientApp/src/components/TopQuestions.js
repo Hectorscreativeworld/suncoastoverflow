@@ -9,33 +9,23 @@ class TopQuestions extends Component {
       <div>
         <section className="Top-Question-ask-Btn">
           <h3 className="TopQuestionText">Top Questions</h3>
-          <Link to="/AskAQuestionHomePage">
-            <button
-              type="button"
-              className="ask-btn btn btn-primary"
-              data-toggle="button"
-              aria-pressed="false"
-              autocomplete="off"
-            >
-              Ask Question
-            </button>
-          </Link>
+          <Link to="/AskAQuestionHomePage">Ask Question</Link>
         </section>
 
-        <div class="btn-group" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-secondary">
+        <div className="btn-group" role="group" aria-label="Basic example">
+          <button type="button" className="btn btn-secondary">
             interesting
           </button>
-          <button type="button" class="btn btn-secondary">
+          <button type="button" className="btn btn-secondary">
             Featured
           </button>
-          <button type="button" class="btn btn-secondary">
+          <button type="button" className="btn btn-secondary">
             Hot
           </button>
-          <button type="button" class="btn btn-secondary">
+          <button type="button" className="btn btn-secondary">
             Week
           </button>
-          <button type="button" class="btn btn-secondary">
+          <button type="button" className="btn btn-secondary">
             Month
           </button>
         </div>
